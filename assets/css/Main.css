@@ -1,0 +1,24 @@
+#profile{
+    background-color:#434242 ;
+    padding:0;
+    }
+#wpcontent, #wpfooter{
+    height: 0%!important;
+    padding-left: 0px!important;     
+}
+h1{color:#d3d3d3;}
+text{color:#bdb8b8;}
+.text>b{color:#bdb8b8;}
+.text>a{color:#bdb8b8 !important;font-size:calc(12px + 0.25vw);}
+body {overflow-x: hidden;}
+
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {background-color: #E0B36F !important;border-color:#c28a36 !important; }
+
+.btn-primary:hover{background-color: #dda34c !important;border-color:#bd8127 !important;}
+
+.btn{width:85%;}
+
+#Table_encomendas{
+    padding-left: 1rem;
+}

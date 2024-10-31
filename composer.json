@@ -1,0 +1,33 @@
+{
+    "name": "ponto25/ourivesweb",
+    "description": "Plugin for WooCommerce integration with Ourives",
+    "type": "libary",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Pedro Ribeiro",
+            "email": "pedro.ribeiro@ponto25.pt"
+        },
+        {
+            "name": "Wesley Silva",
+            "email": "wesleysilva@lidmo.com.br"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "ext-mbstring": "*",
+        "phpro/soap-client": "^1.3",
+        "components/flag-icon-css": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "OurivesWeb\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "laminas/laminas-code": "3.1.0",
+        "php-stubs/wordpress-stubs": "^5.7",
+        "szepeviktor/phpstan-wordpress": "^0.7.5"
+    }
+}

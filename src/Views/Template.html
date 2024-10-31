@@ -1,0 +1,96 @@
+<meta charset="UTF-8">
+
+<div class="row text-center" style="padding: 25px; max-height: 100px;">
+    <div class="column" style="max-width:30%; margin:auto;">
+        <img alt="OurivesWeb" src="https://ourives.ponto25.com/assets/img/logo_ourivesweb_300.png"
+             style="max-width:250px; height: auto;">
+    </div>
+    <div class="column" style="width:70%;font-size:medium;">
+        <h1>Relatório de Sincronização</h1>
+    </div>
+</div>
+<style>
+
+    body {
+        background-color: #474544;
+        font-size: 80%;
+        overflow-x: hidden;
+    }
+
+    h1 {
+        color: white;
+        font-size: 2rem;
+    }
+
+
+    table {
+        background-color: #EFF0F0;
+    }
+
+    .table thead {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: #d8d8d8;
+    }
+
+    .search {
+        position: relative;
+        display: flex;
+    }
+
+    .searchTerm {
+        width: 100%;
+        margin: auto;
+        border: 2px solid #3D5FA9;
+        border-radius: 5px;
+        color: #bababa;
+    }
+
+    .searchTerm:focus {
+        color: #000000;
+    }
+</style>
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
+<table class="table table-bordered" id="myTable" style="max-width:90%;  margin:auto;">
+    <thead>
+    <tr>
+        <th>
+            <img alt="OurivesWeb" src="https://ourives.ponto25.com/assets/img/logo_ourivesweb_300.png"
+                 style="max-width:250px; height: auto;">
+        </th>
+        <th colspan="1" scope="row">
+            <div class="search">
+                <input class="searchTerm" id="myInput" onkeyup="myFunction()" placeholder="Procurar" type="text">
+            </div>
+        </th>
+
+        <th class="text-center" colspan="2">Dados importados para o</th>
+    </tr>
+    <th scope="row" width="6%">#</th>
+    <th scope="col" width="70%">Nome do Produto</th>
+    <th scope="col" width="7%">OurivesWeb</th>
+    <th scope="col" width="7%">WooCommerce</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
